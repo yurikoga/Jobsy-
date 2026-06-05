@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<title>Jobsy Clone</title>
+
+</head>
+
+<body>
+
+<div class="nav">
+  <div class="logo">
+    <div class="logo-circle"></div> Jobsy
+  </div>
+
+  <div class="menu">
+    <span class="active" style="color: black;">Hire a Freelancer</span>
+    <span>Discover Clients</span>
+    <span>Explore Jobs</span>
+    <span>Blog</span>
+  </div>
+
+  <div class="actions">
+    <span style="color: #7b2ff7; margin-top: 6%;">Sign In</span>
+    <div class="btn btn-primary">Sign Up</div>
+  </div>
+</div>
+
+<section class="hero">
+
+  <div class="left" style="margin-top: -16%;">
+    <h1 style="white-space: nowrap;">
+      Your Next <span class="highlight">Freelance</span><br>
+      Job Starts Here
+    </h1>
+
+    <p>
+      Join Joby’s network of over 20,000 freelancers finding meaningful work.
+    </p>
+
+    <div class="buttons">
+      <div class="btn btn-primary">Get Started</div>
+      <div class="btn outline">Explore Jobs</div>
+    </div>
+  </div>
+
+  <div class="right">
+    <img src="imagem/moca.png" style="width: 70%; margin-left: 30%;">
+  </div>
+
+</section>
+
+<!-- SEARCH -->
+<div class="search" style="margin-top: -4%;">
+  <input placeholder="Freelancer">
+  <input placeholder="Job Title or Keyword">
+<span 
+  style="
+    color:#777;
+    cursor:pointer;
+    margin-right:20px;
+    display:flex;
+    margin-top: 0.8%;
+    align-items:center;
+    height:100%;
+  "
+  onclick="clearFields()"
+>
+  Clear
+</span>  <button onclick="search()">Search</button>
+</div>
+
+<!-- LOGOS -->
+<div class="logos">
+  <span>Google</span>
+  <span>Notion</span>
+  <span>Spotify</span>
+  <span>Stripe</span>
+</div>
+
+<section class="categories">
+
+  <!-- LEFT -->
+  <div class="cat-left">
+    <h2>Explore Top Freelance Categories</h2>
+    <p>
+      Discover the most in-demand skills and start connecting with
+      clients who need your expertise.
+    </p>
+    <button>See Categories</button>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="cat-right">
+
+    <div class="arrow left">‹</div>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="imagem/grafica.jpeg">
+        <span>Graphic Design</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
+        <span>UI/UX Design</span>
+      </div>
+
+      <div class="card">
+        <img src="imagem/video.jpg">
+        <span>Video Editing</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+        <span>Development</span>
+      </div>
+
+    </div>
+
+    <div class="arrow right">›</div>
+
+  </div>
+
+</section>
+
+<section class="testimonials">
+
+  <h2>What Our Freelancers Say</h2>
+  <p class="subtitle">
+    Real stories from freelancers who found work, grew, and succeeded with Jobsy.
+  </p>
+
+  <div class="testimonial-box">
+
+    <!-- LEFT -->
+    <div class="t-left">
+      <h3>Amina Tariq</h3>
+
+      <div class="role">
+        <span class="flag"></span>
+        Founder, Creatix Studio
+      </div>
+
+      <div class="stars">★★★★★</div>
+
+      <p class="desc">
+        “I found incredibly reliable and creative freelancers on Jobsy. The platform made the entire hiring process smooth, efficient, and stress-free – ultimately saving me both time, effort, and unnecessary hassle.”
+      </p>
+
+      <button>Watch Story</button>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="t-right">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
+
+      <div class="play">
+        ▶
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DOTS -->
+  <div class="dots">
+    <span class="active"></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</section>
+
+<section class="why" style="margin-left: -6%;">
+
+  <!-- 1 -->
+  <div class="row" style="margin-left: 10%;">
+    <div class="img purple">
+      <img style="width: 73%;" src="imagem/roxo.png">
+    </div>
+
+    <div class="text">
+      <h3>Why Companies Prefer Freelancers</h3>
+      <p>
+        Hiring freelancers gives companies quick access to top talent without the delays of traditional hiring. It's cost-effective, flexible, and perfect for both short and long-term projects. With fresh ideas and specialized skills, freelancers help businesses scale faster in today's fast-paced world.
+      </p>
+
+      <div class="items">
+        <div class="item">
+          <span class="dot purple"></span>
+          Quickly onboard skilled professionals without delays.
+        </div>
+        <div class="item">
+          <span class="dot purple"></span>
+          Access industry experts whenever you need them.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="row reverse" style="margin-left: 10%;">
+    <div class="img yellow">
+      <img style="width: 76%;" src="imagem/amarelo.png">
+    </div>
+
+    <div class="text">
+      <h3>Why Companies Prefer Freelancers</h3>
+      <p>
+        Hiring freelancers gives companies quick access to top talent without the delays of traditional hiring. It's cost-effective, flexible, and perfect for both short and long-term projects. With fresh ideas and specialized skills, freelancers help businesses scale faster in today's fast-paced world.
+      </p>
+
+      <div class="items">
+        <div class="item">
+          <span class="dot yellow"></span>
+          Quickly onboard skilled professionals without delays.
+        </div>
+        <div class="item">
+          <span class="dot yellow"></span>
+          Access industry experts whenever you need them.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="row" style="margin-left: 10%;">
+    <div class="img red">
+      <img style="width: 68%;" src="imagem/rosa.png">
+    </div>
+
+    <div class="text">
+      <h3>Why Companies Prefer Freelancers</h3>
+      <p>
+        Hiring freelancers gives companies quick access to top talent without the delays of traditional hiring. It's cost-effective, flexible, and perfect for both short and long-term projects. With fresh ideas and specialized skills, freelancers help businesses scale faster in today's fast-paced world.
+      </p>
+
+      <div class="items">
+        <div class="item">
+          <span class="dot red"></span>
+          Quickly onboard skilled professionals without delays.
+        </div>
+        <div class="item">
+          <span class="dot red"></span>
+          Access industry experts whenever you need them.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="jobs">
+
+  <h2>Top Freelance Jobs Just for You</h2>
+  <p class="subtitle">
+    Browse thousands of active jobs tailored to your skills and work performances – from anywhere, anytime.
+  </p>
+
+  <div class="jobs-grid">
+
+    <!-- CARD -->
+    <div class="job-card">
+      <h3>UI/UX Designer</h3>
+      <p>Design user-friendly interfaces and enhance user experiences with intuitive digital design solutions.</p>
+      <div class="job-footer">
+        <span>🔵 Google</span>
+        <a>See more</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>Web Developer</h3>
+      <p>Design user-friendly interfaces and enhance user experiences with intuitive digital design solutions.</p>
+      <div class="job-footer">
+        <span>🟥 Adobe</span>
+        <a>See more</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>Copywriter</h3>
+      <p>Design user-friendly interfaces and enhance user experiences with intuitive digital design solutions.</p>
+      <div class="job-footer">
+        <span>🔵 Meta</span>
+        <a>See more</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>SEO Specialist</h3>
+      <p>Design user-friendly interfaces and enhance user experiences with intuitive digital design solutions.</p>
+      <div class="job-footer">
+        <span>🟧 Reddit</span>
+        <a>See more</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>Virtual Assistant</h3>
+      <p>Design user-friendly interfaces and enhance user experiences with intuitive digital design solutions.</p>
+      <div class="job-footer">
+        <span>🔵 LinkedIn</span>
+        <a>See more</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>Webflow Expert</h3>
+      <p>Design user-friendly interfaces and enhance user experiences with intuitive digital design solutions.</p>
+      <div class="job-footer">
+        <span>🔴 Dribbble</span>
+        <a>See more</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>Graphic Designer</h3>
+      <p>Design user-friendly interfaces and enhance user experiences with intuitive digital design solutions.</p>
+      <div class="job-footer">
+        <span>🔵 Behance</span>
+        <a>See more</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>Video Editor</h3>
+      <p>Design user-friendly interfaces and enhance user experiences with intuitive digital design solutions.</p>
+      <div class="job-footer">
+        <span>🔴 YouTube</span>
+        <a>See more</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>Content Writer</h3>
+      <p>Design user-friendly interfaces and enhance user experiences with intuitive digital design solutions.</p>
+      <div class="job-footer">
+        <span>⚫ Medium</span>
+        <a>See more</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+    
+  <img style="margin-left: 18%; object-fit:contain;  /* evita distorção */
+  image-rendering: -webkit-optimize-contrast; width: 60%;" src="imagem/ultimo.png">
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-top">
+
+    <div class="brand">
+      <div class="logo-circle"></div>
+      <h3>Jobsy</h3>
+    </div>
+
+    <div class="col">
+      <h4>Explore</h4>
+      <a>Find Freelancers</a>
+      <a>Find Jobs</a>
+      <a>Categories</a>
+      <a>Success Stories</a>
+    </div>
+
+    <div class="col">
+      <h4>Company</h4>
+      <a>About Us</a>
+      <a>How it works</a>
+      <a>Careers</a>
+      <a>Contact</a>
+    </div>
+
+    <div class="col">
+      <h4>Support</h4>
+      <a>Help Center</a>
+      <a>Trust & Safety</a>
+      <a>Terms of Service</a>
+      <a>Privacy Policy</a>
+    </div>
+
+    <div class="col subscribe">
+      <h4>Subscribe</h4>
+
+      <div class="input-box">
+        <input placeholder="Your email">
+        <button>➤</button>
+      </div>
+
+      <p>Join our newsletter to stay update on new jobs and features.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>Copyright ©2025 Jobsy. All rights reserved.</span>
+
+    <div class="social">
+      <span>f</span>
+      <span>x</span>
+      <span>in</span>
+      <span>p</span>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>
